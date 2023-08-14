@@ -44,7 +44,7 @@ export class AppComponent {
       if(result.value){
         Swal.fire(
           'Published',
-          'Your master has been published.',
+          'Your master has been Published.',
           'success'
         );
       }else if(result.dismiss==Swal.DismissReason.cancel){
