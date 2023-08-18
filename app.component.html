@@ -1,0 +1,295 @@
+<!-- slide-1 -->
+<html>
+<body>
+  <div class="container">
+<h3 class="heading"><b>Member Compliance</b></h3>
+<h2 class="heading"><b>Key Screens Design</b></h2>
+<h1 class="heading1">Insurance Submission - NSE Facing</h1>
+<h5 class="heading">When Master file isn't published</h5>
+</div>
+</body>
+</html>
+<br>
+<!-- slide-2 and slide-3 -->
+<app-navbar></app-navbar>
+
+<div class="btn-container">
+<button (click)="onClick()">PUBLISH MASTER FILE</button>
+</div>
+
+<div class="insur-head">
+<div class="main-head">
+<h1>Insurance submission</h1>
+<h5>MIS of current submission cycle: 2020</h5>
+</div>
+<div class="sub-head"><ul>
+  <li class="&"><img src="https://cdn-icons-png.flaticon.com/512/223/223419.png" height="30px" width="30px">Export</li>
+  <li class="&"><img src="https://i.pinimg.com/736x/34/9f/16/349f16d19dee66579c1e76f567c02000.jpg" height="20px" width="20px">Assign HO Master</li>
+  <li class="&"><img src="https://tse2.mm.bing.net/th?id=OIP.XLhDzT9stxTtDIxk83WyAgAAAA&pid=Api&P=0&h=180" height="20px" width="20px">Clear all search</li>
+  <li class="&"><img src="https://tse2.mm.bing.net/th?id=OIP.mPp0ISv_kkvGwgiB5SJmXAHaGG&pid=Api&P=0&h=180" height="20px" width="20px">Clear Sort</li>
+  <li class="&"><img src="https://tse1.mm.bing.net/th?id=OIP.vIhQTfOj3s6tpIslOucgrgHaHa&pid=Api&P=0&h=180" height="20px" width="20px">Show/Hide Columns</li>
+</ul>
+</div>
+</div>
+
+<div class="table-container">
+<table>
+  <thead>
+    <tr>
+      <th><input type="checkbox"> Member Name <br><input type="text" width="20px" placeholder="search"></th>
+      <th>Member Code <br><input type="text" placeholder="search"></th>
+      <th>Member Status <br><select><option>filter</option></select></th>
+      <th>Inactive Date <br><input type="date" placeholder="filter by date"></th>
+      <th>Penalty <br><select><option>filter</option></select></th>
+      <th>Penalty Amount(INR) <br><input type="text" placeholder="search"></th>
+      <th>Remarks </th>
+      <th>Last Policy Valid upto <br><input type="date" placeholder="filter by date"></th>
+      <th>Due Date <br><input type="date" placeholder="filter by date"></th>
+      <th>Submission Date <br><input type="date" placeholder="filter by date"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users">
+      <td><input type="checkbox">{{ user.name }}</td>
+      <td>{{ user.code }}</td>
+      <td>{{ user.status }}</td>
+      <td>{{ user.date }}</td>
+      <td>{{ user.penalty }}</td>
+      <td>{{ user.pamt }}</td>
+      <td>{{ user.remarks }}</td>
+      <td>{{ user.last }}</td>
+      <td>{{ user.due }}</td>
+      <td>{{ user.submission }}</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<br><br>
+
+<!-- slide-3 -->
+
+<!-- slide-4 -->
+<app-navbar></app-navbar>
+<div class="maing">
+<div>
+  <img src="https://tse2.mm.bing.net/th?id=OIP.bO1MLfxVERIiTHpkHnypTQAAAA&pid=Api&P=0&h=180" height="15px" width="20px">Back
+</div>
+<br>
+<div class="subg" style="box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.3);">
+<h1>Generate Master File for Eligible Members(Insurance submission)</h1>
+<h5>Submission Cycle: 2020</h5>
+<br><br>
+
+<h4 style="color: blue;">View Auto-generated Master</h4>
+
+<div class="btn-down">
+  <button class="btn" (click)="onClick()">Download</button>
+</div>
+<br><br><br>
+
+<h4 style="color: blue;">Upload final master</h4>                     
+<h5>Lorem Ipsum</h5>
+
+<div class="side">
+<div class="side1">
+  <h4 style="color: blue;">Final master</h4><img src="https://tse1.mm.bing.net/th?id=OIP.vIhQTfOj3s6tpIslOucgrgHaHa&pid=Api&P=0&h=180" [style.pointer-events]="isImageDisabled ? 'none' : 'auto'" height="20px" width="20px"> <br> <img src="https://cdn-icons-png.flaticon.com/512/223/223419.png" [style.pointer-events]="isImageDisabled ? 'none' : 'auto'" height="20px" width="20px">
+</div>                    
+  <br><button class="btn-val" [disabled]="isButtonDisabled" (click)="onClick()" >Validate</button>
+</div>
+</div>
+<br><br>
+<div class="footer">
+  <button class="btn-val" [disabled]="isButtonDisabled" (click)="onClick()">PUBLISH</button>
+</div>
+</div>
+
+<!-- slide-5 -->
+<br><br>
+<app-navbar></app-navbar>
+<div class="maing">
+<div>
+  <img src="https://tse2.mm.bing.net/th?id=OIP.bO1MLfxVERIiTHpkHnypTQAAAA&pid=Api&P=0&h=180" height="15px" width="20px">Back
+</div>
+<br>
+<div class="subg" style="box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.3);">
+<h1>Generate Master File for Eligible Members(Insurance submission)</h1>
+<h5>Submission Cycle: 2020</h5>
+<br><br>
+
+<h4 style="color: blue;">View Auto-generated Master</h4>
+
+<div class="btn-down">
+  <button class="btn" (click)="onClick()">Download</button>
+</div>
+<br><br><br>
+
+<h4 style="color: blue;">Upload final master</h4>                     
+<h5>Lorem Ipsum</h5>
+
+<div class="side">
+<div class="side1">
+  <h4 style="color: blue;">Final master</h4><img src="https://tse1.mm.bing.net/th?id=OIP.vIhQTfOj3s6tpIslOucgrgHaHa&pid=Api&P=0&h=180" height="20px" width="20px"> <br> <img src="https://cdn-icons-png.flaticon.com/512/223/223419.png" height="20px" width="20px">
+</div>               
+  <h5>Master.csv</h5>   
+  <br><button class="btn-val" (click)="onClick()" style="color: red;">Validate</button>
+</div>
+</div>
+<br><br>
+<div class="footer">
+  <button class="btn-val" [disabled]="isButtonDisabled" (click)="onClick()">PUBLISH</button>
+</div>
+</div>
+
+<!-- slide-6 -->
+<br><br>
+<app-navbar></app-navbar>
+<div class="maing">
+<div>
+  <img src="https://tse2.mm.bing.net/th?id=OIP.bO1MLfxVERIiTHpkHnypTQAAAA&pid=Api&P=0&h=180" height="15px" width="20px">Back
+</div>
+<br>
+<div class="subg" style="box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.3);">
+<h1>Generate Master File for Eligible Members(Insurance submission)</h1>
+<h5>Submission Cycle: 2020</h5>
+<br><br>
+
+<h4 style="color: blue;">View Auto-generated Master</h4>
+
+<div class="btn-down">
+  <button class="btn" (click)="onClick()">Download</button>
+</div>
+<br><br><br>
+
+<h4 style="color: blue;">Upload final master</h4>                     
+<h5>Lorem Ipsum</h5>
+
+<div class="side">
+<div class="side1">
+  <h4 style="color: blue;">Final master</h4><img src="https://tse1.mm.bing.net/th?id=OIP.vIhQTfOj3s6tpIslOucgrgHaHa&pid=Api&P=0&h=180" height="20px" width="20px"> <br> <img src="https://cdn-icons-png.flaticon.com/512/223/223419.png" height="20px" width="20px">
+</div>               
+  <h5>Master.csv</h5>   
+  <br><button class="btn-val" (click)="onClick()" style="color: green;font-size: 16px;"><img src="https://tse2.mm.bing.net/th?id=OIP.uYU88HkKhYeaAJgMbUNwmAHaHa&pid=Api&P=0&h=180" height="19px" width="20px"> Validated</button>
+</div>
+</div>
+<br><br>
+<div class="footer">
+  <button class="btn-val" (click)="confirmBox()" style="color: white;background-color: #f3870b;">PUBLISH</button>
+</div>
+</div>
+
+<!-- slide-7 -->
+<br><br>
+<app-navbar></app-navbar>
+<div class="maing">
+<div>
+  <img src="https://tse2.mm.bing.net/th?id=OIP.bO1MLfxVERIiTHpkHnypTQAAAA&pid=Api&P=0&h=180" height="15px" width="20px">Back
+</div>
+<br>
+<div class="subg" style="box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.3);">
+<h1>Generate Master File for Eligible Members(Insurance submission)</h1>
+<h5>Submission Cycle: 2020</h5>
+<br><br>
+
+<h4 style="color: blue;">View Auto-generated Master</h4>
+
+<div class="btn-down">
+  <button class="btn" (click)="onClick()">Download</button>
+</div>
+<br><br><br>
+
+<h4 style="color: blue;">Upload final master</h4>                     
+<h5>Lorem Ipsum</h5>
+
+<div class="side" style="border: 2px solid red;margin-right: 200px;">
+<div class="side1">
+  <h4 style="color: blue;">Final master</h4><img src="https://tse1.mm.bing.net/th?id=OIP.vIhQTfOj3s6tpIslOucgrgHaHa&pid=Api&P=0&h=180" height="20px" width="20px"> <br> <img src="https://cdn-icons-png.flaticon.com/512/223/223419.png" height="20px" width="20px">
+</div>               
+  <h5>Master.csv</h5>   
+  <br><button class="btn-val" [disabled]="isButtonDisabled" (click)="onClick()"> Validated</button>
+  <div class="warning" style="display: flex;">
+  <img src="https://tse4.mm.bing.net/th?id=OIP.Nrkj-wjWEoPMn3A2jNvELwHaF7&pid=Api&P=0&h=180" height="30px" width="30px">
+  <ul>
+    <li style="list-style-type: none;">Following errors found:</li>
+    <li style="list-style-type: none;">1.Lorem Ipsum</li>
+    <li style="list-style-type: none;">2.Lorem Ipsum</li>
+  </ul>
+</div>
+</div>
+</div>
+<br><br>
+<div class="footer">
+  <button class="btn-val" (click)="confirm()">PUBLISH</button>
+</div>
+</div>
+
+<!-- slide-8 -->
+<app-navbar></app-navbar>
+<div class="maing">
+<div>
+  <img src="https://tse2.mm.bing.net/th?id=OIP.bO1MLfxVERIiTHpkHnypTQAAAA&pid=Api&P=0&h=180" height="15px" width="20px">Back
+</div>
+<br>
+<div class="subg" style="box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.3);">
+<h1>Generate Master File for Eligible Members(Insurance submission)</h1>
+<h5>Submission Cycle: 2020</h5>
+<br><br>
+
+<h4 style="color: blue;">View Auto-generated Master</h4>
+
+<div class="btn-down">
+  <button class="btn" (click)="onClick()">Download</button>
+</div>
+<br><br><br>
+
+<h4 style="color: blue;">Upload final master</h4>                     
+<h5>Lorem Ipsum</h5>
+
+<div class="side">
+<div class="side1">
+  <h4 style="color: blue;">Final master</h4><img src="https://tse1.mm.bing.net/th?id=OIP.vIhQTfOj3s6tpIslOucgrgHaHa&pid=Api&P=0&h=180" [style.pointer-events]="isImageDisabled ? 'none' : 'auto'" height="20px" width="20px"> <br> <img src="https://cdn-icons-png.flaticon.com/512/223/223419.png" [style.pointer-events]="isImageDisabled ? 'none' : 'auto'" height="20px" width="20px">
+</div>                    
+  <br><button class="btn-val" (click)="onClick()" style="color: red;" >Validate</button>
+</div>
+</div>
+<br><br>
+<div class="footer">
+  <button class="btn-val" [disabled]="isButtonDisabled" (click)="onClick()">PUBLISH</button>
+</div>
+</div>
+
+<!-- slide-9 -->
+<br><br>
+<app-navbar></app-navbar>
+<div class="maing">
+<div>
+  <img src="https://tse2.mm.bing.net/th?id=OIP.bO1MLfxVERIiTHpkHnypTQAAAA&pid=Api&P=0&h=180" height="15px" width="20px">Back
+</div>
+<br>
+<div class="subg" style="box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.3);">
+<h1>Generate Master File for Eligible Members(Insurance submission)</h1>
+<h5>Submission Cycle: 2020</h5>
+<br><br>
+
+<h4 style="color: blue;">View Auto-generated Master</h4>
+
+<div class="btn-down">
+  <button class="btn" (click)="onClick()">Download</button>
+</div>
+<br><br><br>
+
+<h4 style="color: blue;">Upload final master</h4>                     
+<h5>Lorem Ipsum</h5>
+
+<div class="side">
+<div class="side1">
+  <h4 style="color: blue;">Final master</h4><img src="https://tse1.mm.bing.net/th?id=OIP.vIhQTfOj3s6tpIslOucgrgHaHa&pid=Api&P=0&h=180" height="20px" width="20px"> <br> <img src="https://cdn-icons-png.flaticon.com/512/223/223419.png" height="20px" width="20px">
+</div>               
+  <h5>Master.csv</h5>   
+  <br><button class="btn-val" (click)="onClick()" style="color: green;font-size: 16px;"><img src="https://tse2.mm.bing.net/th?id=OIP.uYU88HkKhYeaAJgMbUNwmAHaHa&pid=Api&P=0&h=180" height="19px" width="20px"> Validated</button>
+</div>
+</div>
+<br><br>
+<div class="footer">
+  <button class="btn-val" (click)="popupmessage()" style="color: white;background-color: #f3870b;">PUBLISH</button>
+</div>
+</div>
