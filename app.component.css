@@ -1,0 +1,108 @@
+.heading{
+    color:azure;
+}
+.heading1{
+    font-size: 50px;
+    font-weight: lighter;
+    color: azure;
+}
+:host {
+    display: block;
+    height: 100vh;
+    background-color: rgb(68, 8, 124); /* Replace with your desired background color */
+    margin: 0;
+    padding: 0;
+  }
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+h3,h2{
+    margin: 0;
+    margin-right: 583px;
+    margin-bottom: 5px;
+}
+h1,h5{
+    margin: 0;
+}
+h5{
+    margin-right: 598px;
+    font-weight: lighter;
+}
+h3{
+    margin-right: 615px;
+}
+h1,h5{
+    margin-bottom: 8px;
+}
+h2{
+    margin-bottom: 50px;
+}
+.btn-container{
+    /* background-color: #f3870b; */
+    text-align: right;
+}
+button{
+    margin-left: auto;
+    background-color: #f3870b;
+}
+.insur-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+}
+.sub-head ul{
+    display: flex;
+    list-style-type: none;
+    font-size: 15px;
+    justify-content: space-evenly;
+    width: 400px;
+}
+.table-container{
+    display: flex;
+    justify-content: space-around ;
+    align-items: center;
+}
+.maing{
+    display: flex;
+    flex-direction: column;
+}
+.subg{
+    border: 2px solid rgb(180, 175, 175);
+    margin-left: 10px;
+    margin-right: 80px;
+}
+.btn-down{
+    justify-content: space-around;
+}
+.btn{
+    text-align: center;
+    color: red;
+    background-color: white;
+    height: 50px;
+    width: 120px ;
+}
+.side{
+    margin-left: 600px;
+    margin-bottom: 90px;
+}
+.side1{
+    display: flex;
+}
+.maing{
+    margin-left: 100px;
+}
+.btn-val{
+    background-color: white;
+    height: 50px;
+    width: 120px ;
+    font-display: none;
+}
+.footer{
+    text-align: right;
+    margin-right: 90px;
+}
